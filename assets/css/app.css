@@ -1,17 +1,28 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin);
 
-body { }
+html {
+	min-height: 100%;
+}
+body {
+	background: #fff url(/assets/img/background.png) repeat-x center bottom;
+}
 
-
-
-/* =============================================================================
-   Header
+/* ==========================================================================
+	 Masthead & Quick question info
+	- Position relation and absolute to move quick question to the bottom of the div
    ========================================================================== */
 
-.banner { }
-
+.masthead {
+	position: relative;
+}
+.masthead .quick-question {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
 
 
 /* ==========================================================================
@@ -75,5 +86,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    ========================================================================== */
 
 @media (max-width: 767px) {
-
+  .masthead {
+  	position: static;
+  }
+  .masthead .quick-question {
+  	position: inherit;
+  	text-align: left;
+  }  
 }
