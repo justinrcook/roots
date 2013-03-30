@@ -1,5 +1,6 @@
-<div class="page-header">
-  <h1>
-    <?php echo roots_title(); ?>
-  </h1>
-</div>
+<?php if (!is_front_page()){ ?>
+<h1 class="page-header">
+  <?php echo roots_title(); ?>
+</h1>
+<?php }; ?>
+
