@@ -10,7 +10,7 @@
 		<div class="span6 text-right">
 		  <p class="quick-question">
 		  	<strong>Quick Question?</strong> 1-800-397-4545 or<br>
-		  	<a href="<?php $permalink = get_permalink( 15 ); ?>">Request an Estimate</a>
+		  	<a href="<?php echo get_permalink( 15 ); ?>">Request an Estimate</a>
 		  </p>
 		</div><!-- /.span4 -->
 	</div><!-- /.masthead -->
